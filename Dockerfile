@@ -2,7 +2,7 @@
 FROM node:18
 
 # Set a default value for PROJECT_NAME
-ARG PROJECT_NAME=spreedsheet_api_rapimoney
+ARG PROJECT_NAME=PROJECT_NAME
 ARG PORT=3326
 
 # Set the working directory in the container
