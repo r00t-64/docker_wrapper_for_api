@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nodejsapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nodejsapp
+    ports:
+      - "${PORT}:3000"
+    working_dir: /${PROJECT_NAME}
+    volumes:
+      - ./${PROJECT_NAME}:/${PROJECT_NAME}
+    command: npm start
+    env_file: .env
